@@ -1,0 +1,22 @@
+Problem description - To count number of times, various elements are occuring inside of a given array of elements.
+Practical application - In a data-set,if we are to reduce the size of data-set, we can do so by removing recurring elements in 
+the data-set.This would reduce the time taken to process data,and results can be achieved by just processing unique data-elements
+in the set.
+
+The program is divided into 4 functions apart from the main function.
+ Namely the     
+    1.array_sort() function.
+    2.count_array() function.
+    3.unique_element() function.
+    4.print() function.
+___________________________________________________________________________________________________________________________________
+ 1. array_sort() function : sorts the array in ascending order, by using bubble-sort algorithm.
+___________________________________________________________________________________________________________________________________
+
+ 2. count_array() function : takes the sorted array as an argument, and creates an array pass[], which stores the number of times unique
+elements are occuring in the sorted array.
+____________________________________________________________________________________________________________________________________
+ 3. unique_element() function : takes the sorted array as an argument , and creates an array of unique elements , in the ascending order.
+_____________________________________________________________________________________________________________________________________
+ 4. print() function: takes array of unique elements unique[] and the counter array pass[], and the prints index-wise the number of times
+ each elements occur in the array.
