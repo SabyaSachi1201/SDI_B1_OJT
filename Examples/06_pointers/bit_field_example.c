@@ -3,7 +3,7 @@
 struct data
 {
     unsigned int a:4;
-    unsigned char ch:1;
+    unsigned char ch:8;
 }D;
 //D={10,'A'};
 void main()
