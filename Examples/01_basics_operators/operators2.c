@@ -6,3 +6,4 @@ void main()
     c=++a;
     printf("a=%d,b=%d,c=%d\n",a,b,c);
 }
+//7,5,7

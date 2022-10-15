@@ -9,7 +9,7 @@ void main()
 void filter_data(char arr[100])
 {
     char lat[50],lon[50];
-    for(int i=19;i<=31;i++)
+    for(int i=19;i<=30;i++)
     {
         lat[i-19]=arr[i];
     }
@@ -18,11 +18,15 @@ void filter_data(char arr[100])
         lon[j-34]=arr[j];
     }
     printf("\nThe latitude is : ");
+    //printf("%s\n",lat);
+
     for(int i=0;i<12;i++)
     {
         printf("%c",lat[i]);
     }
     printf("\nThe longitude is : ");
+    //printf("%s\n",lon);
+
     for(int i=0;i<13;i++)
     {
         printf("%c",lon[i]);
