@@ -3,9 +3,13 @@ void main()
 {
     FILE *fp;
     fp=fopen("hello.txt","w");
-    if(fp!=NULL)
+    if(fp==NULL)
     {
-        printf("File created succesfully");
+        printf("\nFailed to create File\n");
+    }
+    else
+    {
+        printf("\nFile created successfully\n");
     }
     fclose(fp);
 }
