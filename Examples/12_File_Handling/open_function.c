@@ -6,14 +6,17 @@
 void main()
 {
     int fd;
-    fd=open("hello.txt",O_WRONLY|O_CREAT);
+    fd=open("hello1.txt",O_WRONLY|O_CREAT);
+    printf("\n value of fd is %d\n",fd);
     if(fd==-1)
     {
         printf("Fail to create");
         return;
     }
-    else
-    {
-        printf("File created successfully");
-    }
+    
+    printf("File created successfully");
+    printf("\n value of fd is %d\n",fd);
+    getchar();
+    fclose(fd);
 }
+
