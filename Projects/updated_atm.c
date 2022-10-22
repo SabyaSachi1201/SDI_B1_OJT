@@ -3,20 +3,22 @@
 int withdraw(char[15],int*,int);
 int deposit(char[15],int*,int);
 void checkbal(char[15],int*,int);
-struct machine
+typedef struct machine
 {
     char acc_number[15];
     char name[30];
     char mobile_number[]
     int account_balance;
     int pin;
-}user[10];
+}m;
+m user[10];
 void main()
 {
     int choice;
+    scanf("%[^\n]s",acc_number)
     while(1)
     {
-    recheck:
+        recheck:
     printf("\nPress 1 to withdraw money from Account.\nPress 2 to deposit cash.\nPress 3 to check your balance.\nPress 4 to exit.\n");
     scanf("%d",&choice);
     switch(choice)
@@ -46,7 +48,7 @@ int withdraw(char acc_number[15],int* account_balance,int pin)
         }
         else
         {
-            printf("\nProcessing........................WITHDRAWN SUCCESSFULLY!!\n");
+            printf("\nProcessing....................WITHDRAWN SUCCESSFULLY!!\n");
             printf("Your account %s has been debited by  %d Rupees",acc_number,amount);
             *account_balance=*account_balance-amount;
             printf("\n Your account %s has balance of %d Rupees.\n",acc_number,*account_balance);
