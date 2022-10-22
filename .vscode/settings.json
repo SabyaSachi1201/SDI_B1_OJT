@@ -3,6 +3,7 @@
     "C_Cpp.dimInactiveRegions": false,
     "files.associations": {
         "stdio.h": "c",
-        "LAB6.C": "cpp"
+        "LAB6.C": "cpp",
+        "hhc.h": "c"
     }
 }
